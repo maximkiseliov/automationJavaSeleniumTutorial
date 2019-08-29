@@ -12,7 +12,7 @@ public class ChromeTest {
     @Test
     public void LaunchChrome_Method2() {
         options = new ChromeOptions();
-        options.addArguments("disable-infobars");
+        options.addArguments("disable-infobars", "incognito0");
 
         driver = new ChromeDriver(options);
         driver.get("http://www.google.com");
